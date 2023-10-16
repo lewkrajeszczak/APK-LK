@@ -1,4 +1,5 @@
-import {Text, View, StyleSheet} from "react-native";
+import React from "react";
+import { View, Text, StyleSheet } from "react-native";
 
 export const Header = () => {
     return (
@@ -7,19 +8,19 @@ export const Header = () => {
         </View>
     );
 };
+
 const styles = StyleSheet.create({
     headerContainer: {
         width: "100%",
-        height: "12%",
-        backgroundColor: "black",
+        height: 80,
+        backgroundColor: "#222",
+        justifyContent: "center",
         alignItems: "center",
     },
     headerTitle: {
-        display: "flex",
-         color: "purple",
-        fontSize: 30,
+        color: "#FFF",
+        fontSize: 24,
         fontWeight: "bold",
-        padding: 20,
-        marginTop: 20,
-    }
+        marginTop: 30,
+    },
 });
